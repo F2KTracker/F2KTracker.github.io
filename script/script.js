@@ -7,16 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Try to play immediately (may be blocked by browser)
     function tryPlay() {
+        audio.muted = false;
         audio.volume = 0.5;
+        audio.currentTime = 0;
         audio.play().catch(() => {
             // If autoplay is blocked, wait for user interaction
             const resumeAudio = () => {
+                audio.muted = false;
+                audio.currentTime = 0;
                 audio.play().catch(() => {});
-                window.removeEventListener('click', resumeAudio);
-                window.removeEventListener('touchstart', resumeAudio);
+                window.removeEventListener('pointerdown', resumeAudio);
             };
-            window.addEventListener('click', resumeAudio);
-            window.addEventListener('touchstart', resumeAudio);
+            window.addEventListener('pointerdown', resumeAudio, { once: true });
         });
     }
     tryPlay();
