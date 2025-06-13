@@ -114,33 +114,6 @@ header p { font-size: 1.2em; margin: 10px 0; }
     box-shadow: 0 4px 16px #0004;
 }
 
-/* Mute Button */
-.mute-btn {
-    position: fixed;
-    right: 24px;
-    bottom: 24px;
-    z-index: 1000;
-    background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-    font-size: 1.7em;
-    box-shadow: 0 2px 8px #0003;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.2s;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: popIn 1.2s;
-}
-.mute-btn:hover {
-    background: linear-gradient(90deg, #f357a8 0%, #7b2ff2 100%);
-    transform: scale(1.08);
-}
-
 /* Stats (if used) */
 .stats {
     margin-top: 18px;
@@ -331,12 +304,5 @@ footer {
         padding: 12px 0;
         margin: 12px auto;
         display: block;
-    }
-    .mute-btn {
-        right: 12px;
-        bottom: 12px;
-        width: 44px;
-        height: 44px;
-        font-size: 1.2em;
     }
 }
