@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2K</title>
+    <meta name="description" content="F2K Bot brings you the best free stuff, deals, and instant alerts directly to your Discord server. The best Discord bot for tracking free games, beta keys, and in-game prizes.">
+    <meta name="keywords" content="F2K Bot, discord, free, games, bot, free stuff, customizable, stuff, freestuff, free steam game, epic game, steam, gog, giveaways, deals, notifications, alerts, gaming, PC, PS4, PS5, Xbox, Switch, Android, iOS, VR">
+    <meta name="author" content="F2K">
+    <meta property="og:title" content="F2K">
+    <meta property="og:description" content="Get the best free stuff, deals, and instant alerts in your Discord server with F2K Bot.">
+    <meta property="og:image" content="f2k_title_logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://f2ktracker.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="F2K">
+    <meta name="twitter:description" content="Get the best free stuff, deals, and instant alerts in your Discord server with F2K Bot.">
+    <meta name="twitter:image" content="f2k_title_logo.png">
+    <link rel="icon" type="image/png" href="f2k_title_logo.png">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "F2K Bot",
+      "applicationCategory": "CommunicationApplication",
+      "operatingSystem": "All",
+      "description": "F2K Bot brings you the best free stuff, deals, and instant alerts directly to your Discord server.",
+      "url": "https://f2ktracker.github.io/",
+      "image": "https://f2ktracker.github.io/f2k_title_logo.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+    <audio id="f2k-audio" preload="auto" loop>
+        <source src="fitgirl.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="mute-btn" aria-label="Mute audio" title="Mute/Unmute" class="mute-btn">🔊</button>
+    <div class="hero glass-card">
+        <img src="F2kLogo.png" alt="F2K Bot Logo" class="logo">
+        <h1>F2K</h1>
+        <p class="subtitle">
+            The best Discord bot for tracking free games, beta keys, and in-game prizes.<br>
+            <span class="highlight">Add them to your account to keep them forever.</span>
+        </p>
+        <a href="https://discord.com/oauth2/authorize?client_id=699966414890467398&scope=bot&permissions=537390144" class="invite-btn" target="_blank">
+            <span>Invite to Discord</span>
+        </a>
+    </div>
+    <main>
+        <section class="features glass-section">
+            <h2>Features</h2>
+            <div class="features-list">
+                <div>
+                    <span class="feature-icon">🎁</span>
+                    <h3>Free Stuff Alerts</h3>
+                    <p>Instant notifications for new freebies and deals.</p>
+                </div>
+                <div>
+                    <span class="feature-icon">🔔</span>
+                    <h3>Custom Notifications</h3>
+                    <p>Get alerts for the stuff you care about most.</p>
+                </div>
+                <div>
+                    <span class="feature-icon">⚡</span>
+                    <h3>Fast & Reliable</h3>
+                    <p>Lightning-fast updates and 24/7 uptime.</p>
+                </div>
+                <div>
+                    <span class="feature-icon">🔄</span>
+                    <h3>Crosspost Support</h3>
+                    <p>Share deals across multiple channels.</p>
+                </div>
+                <div>
+                    <span class="feature-icon">📢</span>
+                    <h3>Channel Messaging</h3>
+                    <p>Send messages to a specific channel.</p>
+                </div>
+                <div>
+                    <span class="feature-icon">🔔</span>
+                    <h3>Role Ping</h3>
+                    <p>Ping a specific role for important alerts.</p>
+                </div>
+            </div>
+        </section>
+        <section class="platforms glass-section">
+            <h2>Supported Platforms</h2>
+            <ul class="platforms-list">
+                <li title="PC">💻 PC</li>
+                <li title="Steam">🟦 Steam</li>
+                <li title="Epic Games Store">🟪 Epic Games</li>
+                <li title="Ubisoft">🎮 Ubisoft</li>
+                <li title="GOG">🟣 GOG</li>
+                <li title="Itchio">🟥 Itchio</li>
+                <li title="PS4">🎮 PS4</li>
+                <li title="PS5">🎮 PS5</li>
+                <li title="Xbox One">🟩 Xbox One</li>
+                <li title="Xbox Series X/S">🟩 Xbox Series X/S</li>
+                <li title="Switch">🔴 Switch</li>
+                <li title="Android">🤖 Android</li>
+                <li title="iOS">📱 iOS</li>
+                <li title="VR">🕶️ VR</li>
+                <li title="Battlenet">🌐 Battlenet</li>
+                <li title="Origin">🟧 Origin</li>
+                <li title="DRM-free">🔓 DRM-free</li>
+                <li title="Xbox 360">🟩 Xbox 360</li>
+            </ul>
+        </section>
+        <section class="commands glass-section">
+            <h2>Commands</h2>
+            <ul class="commands-list" id="commands-list">
+                <li data-cmd="help"><code>@F2K help</code></li>
+                <li data-cmd="set"><code>@F2K set</code></li>
+                <li data-cmd="setrole"><code>@F2K setrole</code></li>
+                <li data-cmd="info"><code>@F2K info</code></li>
+                <li data-cmd="stop"><code>@F2K stop</code></li>
+                <li data-cmd="list"><code>@F2K list</code></li>
+            </ul>
+            <div id="command-desc" class="command-desc" style="display:none;">
+                <h3 id="cmd-title"></h3>
+                <p id="cmd-desc"></p>
+                <button id="cmd-close" class="modern-btn" style="margin-top:16px;">Close</button>
+            </div>
+        </section>
+        <section class="how glass-section">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Invite F2K Bot to your Discord server.</li>
+                <li>Use <code>@F2K set</code> to set up a channel.</li>
+                <li>Start receiving free stuff alerts instantly!</li>
+            </ol>
+        </section>
+        <section class="vote glass-section vote-center">
+            <h2>Vote for F2K Bot</h2>
+            <a href="https://top.gg/bot/699966414890467398" target="_blank" class="vote-btn">Vote on Top.gg</a>
+            <a href="https://discordbotlist.com/bots/f2k" target="_blank" class="vote-btn">Vote on discord bot list</a>
+        </section>
+        <section class="contact glass-section">
+            <h2>Contact</h2>
+            <p>Questions? Join our <a href="https://discord.gg/sufg5es" target="_blank">Discord server</a>.</p>
+        </section>
+        <section class="tos glass-section">
+            <h2>Terms of Service</h2>
+            <p>
+                By using F2K Bot, you agree to our
+                <a href="tos.html" target="_self" class="tos-btn">Terms of Service</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 F2K. Not affiliated with Discord.</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
