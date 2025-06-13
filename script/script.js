@@ -11,14 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
         audio.volume = 0.5;
         audio.currentTime = 0;
         audio.play().catch(() => {
-            // If autoplay is blocked, wait for user interaction
+            // If autoplay is blocked, wait for any user interaction
             const resumeAudio = () => {
                 audio.muted = false;
                 audio.currentTime = 0;
                 audio.play().catch(() => {});
                 window.removeEventListener('pointerdown', resumeAudio);
+                window.removeEventListener('touchstart', resumeAudio);
+                window.removeEventListener('click', resumeAudio);
             };
             window.addEventListener('pointerdown', resumeAudio, { once: true });
+            window.addEventListener('touchstart', resumeAudio, { once: true });
+            window.addEventListener('click', resumeAudio, { once: true });
         });
     }
     tryPlay();
