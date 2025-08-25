@@ -2,27 +2,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Command descriptions popup logic ---
     const commandInfo = {
         help: {
-            title: "@F2K help",
+            title: "/help",
             desc: "Shows all available commands and usage information."
         },
         set: {
-            title: "@F2K set",
+            title: "/set",
             desc: "To receive alerts on beta keys and free to keep goodies, set up a channel."
         },
         setrole: {
-            title: "@F2K setrole",
+            title: "/setrole",
             desc: "Assign a role to receive pings."
         },
         info: {
-            title: "@F2K info",
+            title: "/info",
             desc: "Verify that the setup procedure was completed correctly."
         },
         stop: {
-            title: "@F2K stop",
+            title: "/stop",
             desc: "Turn off the alerts for beta keys, loot, and free-to-keep games."
         },
         list: {
-            title: "@F2K list",
+            title: "/list",
             desc: "Get a list of free games."
         }
     };
@@ -50,4 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
             descBox.style.display = 'none';
         });
     }
+
 });
