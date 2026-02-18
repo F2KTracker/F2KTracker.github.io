@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2K — Free Games, Beta Keys & In-Game Prizes</title>
+    <meta name="description" content="F2K Bot brings you the best free stuff, deals, and instant alerts directly to your Discord server. The best Discord bot for tracking free games, beta keys, and in-game prizes.">
+    <meta name="keywords" content="F2K Bot, discord, free, games, bot, free stuff, customizable, stuff, freestuff, free steam game, epic game, steam, gog, giveaways, deals, notifications, alerts, gaming, PC, PS4, PS5, Xbox, Switch, Android, iOS, VR">
+    <meta name="author" content="F2K">
+    <meta property="og:title" content="F2K">
+    <meta property="og:description" content="Get the best free stuff, deals, and instant alerts in your Discord server with F2K Bot.">
+    <meta property="og:image" content="https://f2ktracker.github.io/f2k_title_logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://f2ktracker.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="F2K">
+    <meta name="twitter:description" content="Get the best free stuff, deals, and instant alerts in your Discord server with F2K Bot.">
+    <meta name="twitter:image" content="https://f2ktracker.github.io/f2k_title_logo.png">
+    <link rel="icon" type="image/png" href="f2k_title_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style/style.css?v=3">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "F2K Bot",
+      "applicationCategory": "CommunicationApplication",
+      "operatingSystem": "All",
+      "description": "F2K Bot brings you the best free stuff, deals, and instant alerts directly to your Discord server.",
+      "url": "https://f2ktracker.github.io/",
+      "image": "https://f2ktracker.github.io/f2k_title_logo.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loader">
+        <img src="F2kLogo.png" alt="F2K" class="loader-logo">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="F2kLogo.png" alt="F2K Logo">
+            <span>F2K</span>
+        </a>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#platforms">Platforms</a></li>
+            <li><a href="#commands">Commands</a></li>
+            <li><a href="#vote">Vote</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=699966414890467398&permissions=537390144&scope=bot%20applications.commands" target="_blank" class="navbar-cta">Invite Bot</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <canvas id="particles"></canvas>
+        <img src="F2kLogo.png" alt="F2K Bot Logo" class="hero-logo">
+        <h1>The internet is full of<br><span class="gradient-text" id="typing-text">free games</span><span id="typing-cursor"></span></h1>
+        <p class="hero-subtitle">
+            The best Discord bot for tracking free games, beta keys, and in-game prizes.<br>
+            <span class="highlight">Add them to your account to keep them forever.</span>
+        </p>
+        <div class="hero-buttons">
+            <a href="https://discord.com/oauth2/authorize?client_id=699966414890467398&permissions=537390144&scope=bot%20applications.commands" target="_blank" class="btn-primary">
+                Invite to Discord
+            </a>
+            <a href="https://discord.gg/sufg5es" target="_blank" class="btn-primary">
+                Join Community
+            </a>
+        </div>
+    </section>
+
+    <!-- How We Work -->
+    <div class="section-alt">
+        <div class="section-inner" id="how-we-work">
+            <div class="section-header reveal">
+                <h2>We <span class="gradient-text">♥</span> Free Games</h2>
+                <p>Here's how F2K keeps you in the loop on every freebie</p>
+            </div>
+            <div class="steps reveal">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>We scan the internet</h3>
+                    <p>F2K's systems continuously search for heavy discounts and 100% off deals across every major platform.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>We verify & curate</h3>
+                    <p>Every find is checked for authenticity — no spam, no malware, only legitimate free games and deals.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>We notify you</h3>
+                    <p>Once verified, alerts are sent straight to your Discord server so you never miss a free game again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <section class="section" id="features">
+        <div class="section-header reveal">
+            <h2>This means <span class="gradient-text">for you</span></h2>
+            <p>Everything you need to never miss another freebie</p>
+        </div>
+        <div class="cards-grid reveal">
+            <div class="card">
+                <span class="card-icon">🎁</span>
+                <h3>Free Stuff Alerts</h3>
+                <p>Instant notifications for new freebies and deals. Get notified in real time the moment a game goes free.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">🔔</span>
+                <h3>Custom Notifications</h3>
+                <p>Get alerts for the stuff you care about most. Filter by platform, game type, and more.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">⚡</span>
+                <h3>Fast & Reliable</h3>
+                <p>Lightning-fast updates and 24/7 uptime. Never miss a deal because of downtime.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">🔄</span>
+                <h3>Crosspost Support</h3>
+                <p>Share deals across multiple channels effortlessly and reach your entire community.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">📢</span>
+                <h3>Channel Messaging</h3>
+                <p>Send messages to a specific channel. Full control over where alerts appear.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">🔔</span>
+                <h3>Role Ping</h3>
+                <p>Ping a specific role for important alerts so the right people always see the news.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms -->
+    <div class="section-alt" id="platforms">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <h2>Supported <span class="gradient-text">Platforms</span></h2>
+                <p>F2K covers every major gaming platform and storefront</p>
+            </div>
+            <div class="platforms-grid reveal">
+                <span class="platform-tag">💻 PC</span>
+                <span class="platform-tag">🟦 Steam</span>
+                <span class="platform-tag">🟪 Epic Games</span>
+                <span class="platform-tag">🎮 Ubisoft</span>
+                <span class="platform-tag">🟣 GOG</span>
+                <span class="platform-tag">🟥 Itchio</span>
+                <span class="platform-tag">🎮 PS4</span>
+                <span class="platform-tag">🎮 PS5</span>
+                <span class="platform-tag">🟩 Xbox One</span>
+                <span class="platform-tag">🟩 Xbox Series X/S</span>
+                <span class="platform-tag">🔴 Switch</span>
+                <span class="platform-tag">🤖 Android</span>
+                <span class="platform-tag">📱 iOS</span>
+                <span class="platform-tag">🕶️ VR</span>
+                <span class="platform-tag">🌐 Battlenet</span>
+                <span class="platform-tag">🟧 Origin</span>
+                <span class="platform-tag">🔓 DRM-free</span>
+                <span class="platform-tag">🟩 Xbox 360</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commands -->
+    <section class="section" id="commands">
+        <div class="section-header reveal">
+            <h2>Bot <span class="gradient-text">Commands</span></h2>
+            <p>Click any command to see what it does</p>
+        </div>
+        <div class="commands-grid reveal" id="commands-grid">
+            <div class="cmd-card" data-cmd="help">
+                <code>/help</code>
+                <div class="cmd-description">Shows all available commands and usage information.</div>
+            </div>
+            <div class="cmd-card" data-cmd="set">
+                <code>/set</code>
+                <div class="cmd-description">To receive alerts on beta keys and free to keep goodies, set up a channel.</div>
+            </div>
+            <div class="cmd-card" data-cmd="setrole">
+                <code>/setrole</code>
+                <div class="cmd-description">Assign a role to receive pings.</div>
+            </div>
+            <div class="cmd-card" data-cmd="info">
+                <code>/info</code>
+                <div class="cmd-description">Verify that the setup procedure was completed correctly.</div>
+            </div>
+            <div class="cmd-card" data-cmd="stop">
+                <code>/stop</code>
+                <div class="cmd-description">Turn off the alerts for beta keys, loot, and free-to-keep games.</div>
+            </div>
+            <div class="cmd-card" data-cmd="list">
+                <code>/list</code>
+                <div class="cmd-description">Get a list of free games.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <div class="section-alt" id="how-it-works">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <h2>Get started in <span class="gradient-text">seconds</span></h2>
+                <p>Setting up F2K is as easy as 1-2-3</p>
+            </div>
+            <div class="steps reveal">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Invite the bot</h3>
+                    <p>Add F2K Bot to your Discord server with one click.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Set a channel</h3>
+                    <p>Use <code>/set</code> to designate a channel for alerts.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Enjoy free games</h3>
+                    <p>Start receiving free stuff alerts instantly!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vote -->
+    <section class="vote-section" id="vote">
+        <div class="reveal">
+            <h2>Love F2K? Vote for us!</h2>
+            <p>Help us grow by voting on your favorite bot list</p>
+            <div class="vote-buttons">
+                <a href="https://top.gg/bot/699966414890467398" target="_blank" class="btn-primary">Vote on Top.gg</a>
+                <a href="https://discordbotlist.com/bots/f2k" target="_blank" class="btn-primary">Vote on Discord Bot List</a>
+                <a href="https://discord.bots.gg/bots/699966414890467398" target="_blank" class="btn-primary">Vote on Discord Bots</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="reveal">
+            <h2>You scrolled all the way down</h2>
+            <p>Now you kinda really have to press this button... Do it.</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=699966414890467398&permissions=537390144&scope=bot%20applications.commands" target="_blank" class="btn-primary">
+                Add F2K to Discord
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-about">
+                <div class="footer-brand">
+                    <img src="F2kLogo.png" alt="F2K" loading="lazy">
+                    <span>F2K</span>
+                </div>
+                <p>The best Discord bot for tracking free games, beta keys, and in-game prizes. Never miss a freebie again.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <a href="https://discord.com/oauth2/authorize?client_id=699966414890467398&permissions=537390144&scope=bot%20applications.commands" target="_blank">Invite Bot</a>
+                <a href="https://discord.gg/sufg5es" target="_blank">Support Server</a>
+            </div>
+            <div class="footer-col">
+                <h4>Vote</h4>
+                <a href="https://top.gg/bot/699966414890467398" target="_blank">Top.gg</a>
+                <a href="https://discordbotlist.com/bots/f2k" target="_blank">Discord Bot List</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="tos.html">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 F2K. Not affiliated with Discord.
+        </div>
+    </footer>
+
+    <!-- Floating Buy Me a Coffee -->
+    <a href="https://www.buymeacoffee.com/Jake202" target="_blank" class="bmc-float">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=Jake202&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee">
+    </a>
+
+    <!-- Scroll-to-Top -->
+    <button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

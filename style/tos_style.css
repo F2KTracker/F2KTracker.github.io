@@ -1,0 +1,210 @@
+/* TOS Page Styles */
+:root {
+    --bg-deep: #0b0e18;
+    --bg-dark: #0f1320;
+    --bg-card: rgba(17, 20, 38, 0.75);
+    --bg-navbar: rgba(11, 14, 24, 0.9);
+    --accent-blurple: #5865F2;
+    --accent-teal: #43b581;
+    --text-primary: #e0e4f0;
+    --text-secondary: #8b92a8;
+    --text-heading: #ffffff;
+    --gradient-cta: #5865F2;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    animation: fadeInBg 0.8s;
+}
+
+/* --- Navbar --- */
+.tos-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 70px;
+    background: var(--bg-navbar);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.tos-navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 1.4em;
+    color: var(--text-heading);
+    text-decoration: none;
+}
+
+.tos-navbar-brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.tos-navbar a.back-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.95em;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.tos-navbar a.back-link:hover {
+    color: var(--accent-blurple);
+}
+
+/* --- Document Container --- */
+.document,
+dt {
+    width: 100%;
+    overflow: auto;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+    padding: 48px 40px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* --- Typography --- */
+p,
+ul {
+    color: var(--text-secondary);
+    font-size: 1em;
+    padding: 0.25em;
+    max-width: 50em;
+    line-height: 1.7;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2.2em;
+    color: var(--accent-blurple);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+h2 {
+    color: var(--accent-blurple);
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+h3,
+h5 {
+    color: var(--text-heading);
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+    font-size: 1.1em;
+}
+
+h4 {
+    color: #7b8cff;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+    font-size: 1.05em;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+a {
+    color: var(--accent-blurple);
+    text-decoration: underline;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--accent-teal);
+}
+
+/* --- Animations --- */
+@keyframes fadeInBg {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Back Button --- */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--accent-blurple);
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.back-btn:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(88, 101, 242, 0.35);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .document {
+        padding: 28px 18px;
+        margin-top: 90px;
+        border-radius: 14px;
+    }
+
+    .tos-navbar {
+        padding: 0 20px;
+    }
+}
